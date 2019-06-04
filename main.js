@@ -1,9 +1,8 @@
 function daysInYear(year) {
-  const errorMessagge = 'exception';
   if (Number.isInteger(year)) {
     return isLeapYear(year) ? 366 : 365;
   } else {
-    return errorMessagge;
+    throw new Error('exception');
   }
 }
 
